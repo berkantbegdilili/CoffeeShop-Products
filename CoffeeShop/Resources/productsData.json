@@ -1,0 +1,239 @@
+[
+    {
+        "id": 1001,
+        "name": "Caffe Americano",
+        "imageName": "caffe-americano",
+        "price": 15.00,
+        "isFavorite": true
+    },
+    {
+        "id": 1002,
+        "name": "Caffe Latte",
+        "imageName": "caffe-latte",
+        "price": 15.00,
+        "isFavorite": false
+    },
+    {
+        "id": 1003,
+        "name": "Caffe Mocha",
+        "imageName": "caffe-mocha",
+        "price": 15.00,
+        "isFavorite": false
+    },
+    {
+        "id": 1004,
+        "name": "Cappuccino",
+        "imageName": "cappuccino",
+        "price": 15.00,
+        "isFavorite": false
+    },
+    {
+        "id": 1005,
+        "name": "Caramel Macchiato",
+        "imageName": "caramel-macchiato",
+        "price": 15.00,
+        "isFavorite": false
+    },
+    {
+        "id": 1006,
+        "name": "Espresso Con Panna",
+        "imageName": "espresso-con-panna",
+        "price": 15.00,
+        "isFavorite": false
+    },
+    {
+        "id": 1007,
+        "name": "Espresso Macchiato",
+        "imageName": "espresso-macchiato",
+        "price": 15.00,
+        "isFavorite": false
+    },
+    {
+        "id": 1008,
+        "name": "Espresso",
+        "imageName": "espresso",
+        "price": 15.00,
+        "isFavorite": false
+    },
+    {
+        "id": 1009,
+        "name": "Flat White",
+        "imageName": "flat-white",
+        "price": 15.00,
+        "isFavorite": false
+    },
+    {
+        "id": 1010,
+        "name": "Iced Caffe Americano",
+        "imageName": "iced-caffe-americano",
+        "price": 15.00,
+        "isFavorite": false
+    },
+    {
+        "id": 1011,
+        "name": "Iced Caffe Latte",
+        "imageName": "iced-caffe-latte",
+        "price": 15.00,
+        "isFavorite": false
+    },
+    {
+        "id": 1012,
+        "name": "Iced Caramel Macchiato",
+        "imageName": "iced-caramel-macchiato",
+        "price": 15.00,
+        "isFavorite": false
+    },
+    {
+        "id": 1013,
+        "name": "Iced White Chocolate Mocha",
+        "imageName": "iced-white-chocolate-mocha",
+        "price": 15.00,
+        "isFavorite": false
+    },
+    {
+        "id": 1014,
+        "name": "Ristretto Bianco",
+        "imageName": "ristretto-bianco",
+        "price": 15.00,
+        "isFavorite": false
+    },
+    {
+        "id": 1015,
+        "name": "White Chocolate Mocha",
+        "imageName": "white-chocolate-mocha",
+        "price": 15.00,
+        "isFavorite": false
+    },
+    {
+        "id": 1016,
+        "name": "Buzlu Filtre Kahve",
+        "imageName": "buzlu-filtre-kahve",
+        "price": 10.00,
+        "isFavorite": false
+    },
+    {
+        "id": 1017,
+        "name": "Buzlu Misto",
+        "imageName": "buzlu-misto",
+        "price": 10.00,
+        "isFavorite": false
+    },
+    {
+        "id": 1018,
+        "name": "Caffe Misto",
+        "imageName": "caffe-misto",
+        "price": 10.00,
+        "isFavorite": false
+    },
+    {
+        "id": 1019,
+        "name": "Cold Brew",
+        "imageName": "cold-brew",
+        "price": 10.00,
+        "isFavorite": false
+    },
+    {
+        "id": 1020,
+        "name": "Sütlü Cold Brew",
+        "imageName": "sutlu-cold-brew",
+        "price": 10.00,
+        "isFavorite": false
+    },
+    {
+        "id": 1021,
+        "name": "Filtre Kahve",
+        "imageName": "filtre-kahve",
+        "price": 10.00,
+        "isFavorite": false
+    },
+    {
+        "id": 1022,
+        "name": "Sıcak Çikolata",
+        "imageName": "hot-chocolate",
+        "price": 12.00,
+        "isFavorite": false
+    },
+    {
+        "id": 1023,
+        "name": "Türk Kahvesi",
+        "imageName": "turk-kahvesi",
+        "price": 9.00,
+        "isFavorite": false
+    },
+    {
+        "id": 2001,
+        "name": "Dopdolu Fit Cookie",
+        "imageName": "dopdolu-fit-cookie",
+        "price": 13.00,
+        "isFavorite": false
+    },
+    {
+        "id": 2002,
+        "name": "Triple Chocolate Cookie",
+        "imageName": "triple-chocolate-cookie",
+        "price": 13.00,
+        "isFavorite": false
+    },
+    {
+        "id": 2003,
+        "name": "Misto Cookie",
+        "imageName": "misto-cookie",
+        "price": 13.00,
+        "isFavorite": false
+    },
+    {
+        "id": 3001,
+        "name": "Kremali Havuçlu Kek",
+        "imageName": "kremali-havuclu-kek",
+        "price": 12.00,
+        "isFavorite": false
+    },
+    {
+        "id": 3002,
+        "name": "Elmalı Fit Kek",
+        "imageName": "elmali-fit-kek",
+        "price": 12.00,
+        "isFavorite": false
+    },
+    {
+        "id": 3003,
+        "name": "Mozaik Kek",
+        "imageName": "mozaik-kek",
+        "price": 12.00,
+        "isFavorite": false
+    },
+    {
+        "id": 3004,
+        "name": "Hurmalı Fit Brownie",
+        "imageName": "hurmali-fit-brownie",
+        "price": 12.00,
+        "isFavorite": false
+    },{
+        "id": 4001,
+        "name": "Füme Hindili Jambonlu Sandviç",
+        "imageName": "fume-hindili-jambonlu",
+        "price": 15.00,
+        "isFavorite": false
+    },
+    {
+        "id": 4002,
+        "name": "Tonton Panini",
+        "imageName": "tonton-panini",
+        "price": 15.00,
+        "isFavorite": false
+    },
+    {
+        "id": 4003,
+        "name": "Fiesta",
+        "imageName": "fiesta",
+        "price": 12.00,
+        "isFavorite": false
+    },
+    {
+        "id": 4004,
+        "name": "Yumurtalı Açık Sandviç",
+        "imageName": "yumurtali-acik-sandvic",
+        "price": 12.00,
+        "isFavorite": false
+    }
+]

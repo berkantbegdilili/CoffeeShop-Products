@@ -9,21 +9,107 @@
 /* Begin PBXBuildFile section */
 		F82E4BBF24869F55006295EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82E4BBE24869F55006295EC /* AppDelegate.swift */; };
 		F82E4BC124869F55006295EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82E4BC024869F55006295EC /* SceneDelegate.swift */; };
-		F82E4BC324869F55006295EC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82E4BC224869F55006295EC /* ContentView.swift */; };
 		F82E4BC524869F56006295EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F82E4BC424869F56006295EC /* Assets.xcassets */; };
 		F82E4BC824869F56006295EC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F82E4BC724869F56006295EC /* Preview Assets.xcassets */; };
 		F82E4BCB24869F56006295EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F82E4BC924869F56006295EC /* LaunchScreen.storyboard */; };
+		F82E4BD52486A3D3006295EC /* ProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82E4BD42486A3D3006295EC /* ProductsView.swift */; };
+		F82E4BDC2486BADE006295EC /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82E4BDB2486BADE006295EC /* Product.swift */; };
+		F82E4BDE2486BCA6006295EC /* productsData.json in Resources */ = {isa = PBXBuildFile; fileRef = F82E4BDD2486BCA6006295EC /* productsData.json */; };
+		F82E4BE02486BFA0006295EC /* ProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82E4BDF2486BFA0006295EC /* ProductRow.swift */; };
+		F82E4C082486C610006295EC /* turk-kahvesi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F82E4BE32486C60F006295EC /* turk-kahvesi.jpg */; };
+		F82E4C092486C610006295EC /* iced-caffe-latte.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F82E4BE52486C60F006295EC /* iced-caffe-latte.jpg */; };
+		F82E4C0A2486C610006295EC /* iced-white-chocolate-mocha.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F82E4BE62486C60F006295EC /* iced-white-chocolate-mocha.jpg */; };
+		F82E4C0B2486C610006295EC /* ristretto-bianco.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F82E4BE72486C60F006295EC /* ristretto-bianco.jpg */; };
+		F82E4C0C2486C610006295EC /* espresso-con-panna.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F82E4BE82486C60F006295EC /* espresso-con-panna.jpg */; };
+		F82E4C0D2486C610006295EC /* espresso.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F82E4BE92486C60F006295EC /* espresso.jpg */; };
+		F82E4C0E2486C610006295EC /* flat-white.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F82E4BEA2486C60F006295EC /* flat-white.jpg */; };
+		F82E4C0F2486C610006295EC /* espresso-macchiato.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F82E4BEB2486C60F006295EC /* espresso-macchiato.jpg */; };
+		F82E4C102486C610006295EC /* caramel-macchiato.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F82E4BEC2486C60F006295EC /* caramel-macchiato.jpg */; };
+		F82E4C112486C610006295EC /* iced-caffe-americano.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F82E4BED2486C60F006295EC /* iced-caffe-americano.jpg */; };
+		F82E4C122486C610006295EC /* caffe-mocha.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F82E4BEE2486C60F006295EC /* caffe-mocha.jpg */; };
+		F82E4C132486C610006295EC /* cappuccino.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F82E4BEF2486C60F006295EC /* cappuccino.jpg */; };
+		F82E4C142486C610006295EC /* caffe-latte.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F82E4BF02486C60F006295EC /* caffe-latte.jpg */; };
+		F82E4C152486C610006295EC /* caffe-americano.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F82E4BF12486C60F006295EC /* caffe-americano.jpg */; };
+		F82E4C162486C610006295EC /* iced-caramel-macchiato.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F82E4BF22486C60F006295EC /* iced-caramel-macchiato.jpg */; };
+		F82E4C172486C610006295EC /* white-chocolate-mocha.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F82E4BF32486C60F006295EC /* white-chocolate-mocha.jpg */; };
+		F82E4C182486C610006295EC /* hot-chocolate.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F82E4BF52486C60F006295EC /* hot-chocolate.jpg */; };
+		F82E4C192486C610006295EC /* caffe-misto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F82E4BF72486C60F006295EC /* caffe-misto.jpg */; };
+		F82E4C1A2486C610006295EC /* filtre-kahve.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F82E4BF82486C60F006295EC /* filtre-kahve.jpg */; };
+		F82E4C1B2486C610006295EC /* buzlu-misto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F82E4BF92486C60F006295EC /* buzlu-misto.jpg */; };
+		F82E4C1C2486C610006295EC /* sutlu-cold-brew.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F82E4BFA2486C60F006295EC /* sutlu-cold-brew.jpg */; };
+		F82E4C1D2486C610006295EC /* buzlu-filtre-kahve.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F82E4BFB2486C60F006295EC /* buzlu-filtre-kahve.jpg */; };
+		F82E4C1E2486C610006295EC /* cold-brew.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F82E4BFC2486C60F006295EC /* cold-brew.jpg */; };
+		F82E4C1F2486C610006295EC /* kremali-havuclu-kek.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F82E4BFE2486C60F006295EC /* kremali-havuclu-kek.jpg */; };
+		F82E4C202486C610006295EC /* elmali-fit-kek.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F82E4BFF2486C60F006295EC /* elmali-fit-kek.jpg */; };
+		F82E4C212486C610006295EC /* mozaik-kek.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F82E4C002486C60F006295EC /* mozaik-kek.jpg */; };
+		F82E4C222486C610006295EC /* hurmali-fit-brownie.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F82E4C012486C60F006295EC /* hurmali-fit-brownie.jpg */; };
+		F82E4C232486C610006295EC /* fume-hindili-jambonlu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F82E4C032486C610006295EC /* fume-hindili-jambonlu.jpg */; };
+		F82E4C242486C610006295EC /* tonton-panini.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F82E4C042486C610006295EC /* tonton-panini.jpg */; };
+		F82E4C252486C610006295EC /* fiesta.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F82E4C052486C610006295EC /* fiesta.jpg */; };
+		F82E4C262486C610006295EC /* mistik-sandvic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F82E4C062486C610006295EC /* mistik-sandvic.jpg */; };
+		F82E4C272486C610006295EC /* yumurtali-acik-sandvic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F82E4C072486C610006295EC /* yumurtali-acik-sandvic.jpg */; };
+		F82E4C292486C673006295EC /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82E4C282486C673006295EC /* Data.swift */; };
+		F82E4C2B2486C90D006295EC /* ProductsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82E4C2A2486C90D006295EC /* ProductsList.swift */; };
+		F849AE4224895AB70031952B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F849AE4124895AB70031952B /* Extensions.swift */; };
+		F849AE4E24898DB90031952B /* ProductsDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F849AE4D24898DB90031952B /* ProductsDetail.swift */; };
+		F849AE522489B0A00031952B /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F849AE512489B0A00031952B /* UserData.swift */; };
+		F8EEE6D624870BD700E0EB79 /* triple-chocolate-cookie.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F8EEE6D324870BD700E0EB79 /* triple-chocolate-cookie.jpg */; };
+		F8EEE6D724870BD700E0EB79 /* misto-cookie.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F8EEE6D424870BD700E0EB79 /* misto-cookie.jpg */; };
+		F8EEE6D824870BD700E0EB79 /* dopdolu-fit-cookie.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F8EEE6D524870BD700E0EB79 /* dopdolu-fit-cookie.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F82E4BBB24869F55006295EC /* CoffeeShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F82E4BBE24869F55006295EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F82E4BC024869F55006295EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F82E4BC224869F55006295EC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F82E4BC424869F56006295EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F82E4BC724869F56006295EC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F82E4BCA24869F56006295EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F82E4BCC24869F56006295EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F82E4BD42486A3D3006295EC /* ProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsView.swift; sourceTree = "<group>"; };
+		F82E4BDB2486BADE006295EC /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		F82E4BDD2486BCA6006295EC /* productsData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = productsData.json; sourceTree = "<group>"; };
+		F82E4BDF2486BFA0006295EC /* ProductRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
+		F82E4BE32486C60F006295EC /* turk-kahvesi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "turk-kahvesi.jpg"; sourceTree = "<group>"; };
+		F82E4BE52486C60F006295EC /* iced-caffe-latte.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "iced-caffe-latte.jpg"; sourceTree = "<group>"; };
+		F82E4BE62486C60F006295EC /* iced-white-chocolate-mocha.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "iced-white-chocolate-mocha.jpg"; sourceTree = "<group>"; };
+		F82E4BE72486C60F006295EC /* ristretto-bianco.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ristretto-bianco.jpg"; sourceTree = "<group>"; };
+		F82E4BE82486C60F006295EC /* espresso-con-panna.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "espresso-con-panna.jpg"; sourceTree = "<group>"; };
+		F82E4BE92486C60F006295EC /* espresso.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = espresso.jpg; sourceTree = "<group>"; };
+		F82E4BEA2486C60F006295EC /* flat-white.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "flat-white.jpg"; sourceTree = "<group>"; };
+		F82E4BEB2486C60F006295EC /* espresso-macchiato.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "espresso-macchiato.jpg"; sourceTree = "<group>"; };
+		F82E4BEC2486C60F006295EC /* caramel-macchiato.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "caramel-macchiato.jpg"; sourceTree = "<group>"; };
+		F82E4BED2486C60F006295EC /* iced-caffe-americano.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "iced-caffe-americano.jpg"; sourceTree = "<group>"; };
+		F82E4BEE2486C60F006295EC /* caffe-mocha.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "caffe-mocha.jpg"; sourceTree = "<group>"; };
+		F82E4BEF2486C60F006295EC /* cappuccino.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cappuccino.jpg; sourceTree = "<group>"; };
+		F82E4BF02486C60F006295EC /* caffe-latte.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "caffe-latte.jpg"; sourceTree = "<group>"; };
+		F82E4BF12486C60F006295EC /* caffe-americano.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "caffe-americano.jpg"; sourceTree = "<group>"; };
+		F82E4BF22486C60F006295EC /* iced-caramel-macchiato.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "iced-caramel-macchiato.jpg"; sourceTree = "<group>"; };
+		F82E4BF32486C60F006295EC /* white-chocolate-mocha.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "white-chocolate-mocha.jpg"; sourceTree = "<group>"; };
+		F82E4BF52486C60F006295EC /* hot-chocolate.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hot-chocolate.jpg"; sourceTree = "<group>"; };
+		F82E4BF72486C60F006295EC /* caffe-misto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "caffe-misto.jpg"; sourceTree = "<group>"; };
+		F82E4BF82486C60F006295EC /* filtre-kahve.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "filtre-kahve.jpg"; sourceTree = "<group>"; };
+		F82E4BF92486C60F006295EC /* buzlu-misto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "buzlu-misto.jpg"; sourceTree = "<group>"; };
+		F82E4BFA2486C60F006295EC /* sutlu-cold-brew.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "sutlu-cold-brew.jpg"; sourceTree = "<group>"; };
+		F82E4BFB2486C60F006295EC /* buzlu-filtre-kahve.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "buzlu-filtre-kahve.jpg"; sourceTree = "<group>"; };
+		F82E4BFC2486C60F006295EC /* cold-brew.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "cold-brew.jpg"; sourceTree = "<group>"; };
+		F82E4BFE2486C60F006295EC /* kremali-havuclu-kek.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "kremali-havuclu-kek.jpg"; sourceTree = "<group>"; };
+		F82E4BFF2486C60F006295EC /* elmali-fit-kek.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "elmali-fit-kek.jpg"; sourceTree = "<group>"; };
+		F82E4C002486C60F006295EC /* mozaik-kek.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "mozaik-kek.jpg"; sourceTree = "<group>"; };
+		F82E4C012486C60F006295EC /* hurmali-fit-brownie.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hurmali-fit-brownie.jpg"; sourceTree = "<group>"; };
+		F82E4C032486C610006295EC /* fume-hindili-jambonlu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "fume-hindili-jambonlu.jpg"; sourceTree = "<group>"; };
+		F82E4C042486C610006295EC /* tonton-panini.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "tonton-panini.jpg"; sourceTree = "<group>"; };
+		F82E4C052486C610006295EC /* fiesta.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fiesta.jpg; sourceTree = "<group>"; };
+		F82E4C062486C610006295EC /* mistik-sandvic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "mistik-sandvic.jpg"; sourceTree = "<group>"; };
+		F82E4C072486C610006295EC /* yumurtali-acik-sandvic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "yumurtali-acik-sandvic.jpg"; sourceTree = "<group>"; };
+		F82E4C282486C673006295EC /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		F82E4C2A2486C90D006295EC /* ProductsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsList.swift; sourceTree = "<group>"; };
+		F849AE4124895AB70031952B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		F849AE4D24898DB90031952B /* ProductsDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsDetail.swift; sourceTree = "<group>"; };
+		F849AE512489B0A00031952B /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		F8EEE6D324870BD700E0EB79 /* triple-chocolate-cookie.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "triple-chocolate-cookie.jpg"; sourceTree = "<group>"; };
+		F8EEE6D424870BD700E0EB79 /* misto-cookie.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "misto-cookie.jpg"; sourceTree = "<group>"; };
+		F8EEE6D524870BD700E0EB79 /* dopdolu-fit-cookie.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "dopdolu-fit-cookie.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +142,15 @@
 		F82E4BBD24869F55006295EC /* CoffeeShop */ = {
 			isa = PBXGroup;
 			children = (
-				F82E4BBE24869F55006295EC /* AppDelegate.swift */,
-				F82E4BC024869F55006295EC /* SceneDelegate.swift */,
-				F82E4BC224869F55006295EC /* ContentView.swift */,
-				F82E4BC424869F56006295EC /* Assets.xcassets */,
-				F82E4BC924869F56006295EC /* LaunchScreen.storyboard */,
+				F82E4BD324869F74006295EC /* Resources */,
+				F82E4BD224869F66006295EC /* Main */,
+				F82E4BD82486B899006295EC /* Models */,
+				F82E4BD42486A3D3006295EC /* ProductsView.swift */,
+				F82E4C2A2486C90D006295EC /* ProductsList.swift */,
+				F82E4BDF2486BFA0006295EC /* ProductRow.swift */,
+				F849AE4D24898DB90031952B /* ProductsDetail.swift */,
 				F82E4BCC24869F56006295EC /* Info.plist */,
+				F82E4BC924869F56006295EC /* LaunchScreen.storyboard */,
 				F82E4BC624869F56006295EC /* Preview Content */,
 			);
 			path = CoffeeShop;
@@ -73,6 +162,134 @@
 				F82E4BC724869F56006295EC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F82E4BD224869F66006295EC /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F82E4BBE24869F55006295EC /* AppDelegate.swift */,
+				F82E4BC024869F55006295EC /* SceneDelegate.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		F82E4BD324869F74006295EC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F82E4BDD2486BCA6006295EC /* productsData.json */,
+				F8EEE6D224870BD700E0EB79 /* kurabiyeler */,
+				F82E4BE12486C60F006295EC /* icecekler */,
+				F82E4BFD2486C60F006295EC /* kekler */,
+				F82E4C022486C610006295EC /* sandvicler */,
+				F82E4BC424869F56006295EC /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F82E4BD82486B899006295EC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F82E4BDB2486BADE006295EC /* Product.swift */,
+				F849AE512489B0A00031952B /* UserData.swift */,
+				F82E4C282486C673006295EC /* Data.swift */,
+				F849AE4124895AB70031952B /* Extensions.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F82E4BE12486C60F006295EC /* icecekler */ = {
+			isa = PBXGroup;
+			children = (
+				F82E4BE22486C60F006295EC /* türk kahvesi */,
+				F82E4BE42486C60F006295EC /* espresso bazlı */,
+				F82E4BF42486C60F006295EC /* sıcak çikolata */,
+				F82E4BF62486C60F006295EC /* filtre */,
+			);
+			path = icecekler;
+			sourceTree = "<group>";
+		};
+		F82E4BE22486C60F006295EC /* türk kahvesi */ = {
+			isa = PBXGroup;
+			children = (
+				F82E4BE32486C60F006295EC /* turk-kahvesi.jpg */,
+			);
+			path = "türk kahvesi";
+			sourceTree = "<group>";
+		};
+		F82E4BE42486C60F006295EC /* espresso bazlı */ = {
+			isa = PBXGroup;
+			children = (
+				F82E4BE52486C60F006295EC /* iced-caffe-latte.jpg */,
+				F82E4BE62486C60F006295EC /* iced-white-chocolate-mocha.jpg */,
+				F82E4BE72486C60F006295EC /* ristretto-bianco.jpg */,
+				F82E4BE82486C60F006295EC /* espresso-con-panna.jpg */,
+				F82E4BE92486C60F006295EC /* espresso.jpg */,
+				F82E4BEA2486C60F006295EC /* flat-white.jpg */,
+				F82E4BEB2486C60F006295EC /* espresso-macchiato.jpg */,
+				F82E4BEC2486C60F006295EC /* caramel-macchiato.jpg */,
+				F82E4BED2486C60F006295EC /* iced-caffe-americano.jpg */,
+				F82E4BEE2486C60F006295EC /* caffe-mocha.jpg */,
+				F82E4BEF2486C60F006295EC /* cappuccino.jpg */,
+				F82E4BF02486C60F006295EC /* caffe-latte.jpg */,
+				F82E4BF12486C60F006295EC /* caffe-americano.jpg */,
+				F82E4BF22486C60F006295EC /* iced-caramel-macchiato.jpg */,
+				F82E4BF32486C60F006295EC /* white-chocolate-mocha.jpg */,
+			);
+			path = "espresso bazlı";
+			sourceTree = "<group>";
+		};
+		F82E4BF42486C60F006295EC /* sıcak çikolata */ = {
+			isa = PBXGroup;
+			children = (
+				F82E4BF52486C60F006295EC /* hot-chocolate.jpg */,
+			);
+			path = "sıcak çikolata";
+			sourceTree = "<group>";
+		};
+		F82E4BF62486C60F006295EC /* filtre */ = {
+			isa = PBXGroup;
+			children = (
+				F82E4BF72486C60F006295EC /* caffe-misto.jpg */,
+				F82E4BF82486C60F006295EC /* filtre-kahve.jpg */,
+				F82E4BF92486C60F006295EC /* buzlu-misto.jpg */,
+				F82E4BFA2486C60F006295EC /* sutlu-cold-brew.jpg */,
+				F82E4BFB2486C60F006295EC /* buzlu-filtre-kahve.jpg */,
+				F82E4BFC2486C60F006295EC /* cold-brew.jpg */,
+			);
+			path = filtre;
+			sourceTree = "<group>";
+		};
+		F82E4BFD2486C60F006295EC /* kekler */ = {
+			isa = PBXGroup;
+			children = (
+				F82E4BFE2486C60F006295EC /* kremali-havuclu-kek.jpg */,
+				F82E4BFF2486C60F006295EC /* elmali-fit-kek.jpg */,
+				F82E4C002486C60F006295EC /* mozaik-kek.jpg */,
+				F82E4C012486C60F006295EC /* hurmali-fit-brownie.jpg */,
+			);
+			path = kekler;
+			sourceTree = "<group>";
+		};
+		F82E4C022486C610006295EC /* sandvicler */ = {
+			isa = PBXGroup;
+			children = (
+				F82E4C032486C610006295EC /* fume-hindili-jambonlu.jpg */,
+				F82E4C042486C610006295EC /* tonton-panini.jpg */,
+				F82E4C052486C610006295EC /* fiesta.jpg */,
+				F82E4C062486C610006295EC /* mistik-sandvic.jpg */,
+				F82E4C072486C610006295EC /* yumurtali-acik-sandvic.jpg */,
+			);
+			path = sandvicler;
+			sourceTree = "<group>";
+		};
+		F8EEE6D224870BD700E0EB79 /* kurabiyeler */ = {
+			isa = PBXGroup;
+			children = (
+				F8EEE6D324870BD700E0EB79 /* triple-chocolate-cookie.jpg */,
+				F8EEE6D424870BD700E0EB79 /* misto-cookie.jpg */,
+				F8EEE6D524870BD700E0EB79 /* dopdolu-fit-cookie.jpg */,
+			);
+			path = kurabiyeler;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +352,43 @@
 			files = (
 				F82E4BCB24869F56006295EC /* LaunchScreen.storyboard in Resources */,
 				F82E4BC824869F56006295EC /* Preview Assets.xcassets in Resources */,
+				F82E4C192486C610006295EC /* caffe-misto.jpg in Resources */,
+				F82E4C162486C610006295EC /* iced-caramel-macchiato.jpg in Resources */,
+				F82E4C132486C610006295EC /* cappuccino.jpg in Resources */,
+				F82E4C0C2486C610006295EC /* espresso-con-panna.jpg in Resources */,
+				F8EEE6D624870BD700E0EB79 /* triple-chocolate-cookie.jpg in Resources */,
+				F82E4C102486C610006295EC /* caramel-macchiato.jpg in Resources */,
+				F82E4C152486C610006295EC /* caffe-americano.jpg in Resources */,
+				F82E4C232486C610006295EC /* fume-hindili-jambonlu.jpg in Resources */,
+				F82E4C112486C610006295EC /* iced-caffe-americano.jpg in Resources */,
+				F82E4C182486C610006295EC /* hot-chocolate.jpg in Resources */,
+				F82E4C0F2486C610006295EC /* espresso-macchiato.jpg in Resources */,
+				F82E4C172486C610006295EC /* white-chocolate-mocha.jpg in Resources */,
+				F82E4C1F2486C610006295EC /* kremali-havuclu-kek.jpg in Resources */,
+				F8EEE6D824870BD700E0EB79 /* dopdolu-fit-cookie.jpg in Resources */,
+				F82E4C272486C610006295EC /* yumurtali-acik-sandvic.jpg in Resources */,
+				F82E4C242486C610006295EC /* tonton-panini.jpg in Resources */,
+				F82E4C1D2486C610006295EC /* buzlu-filtre-kahve.jpg in Resources */,
+				F82E4C0D2486C610006295EC /* espresso.jpg in Resources */,
+				F82E4C1E2486C610006295EC /* cold-brew.jpg in Resources */,
+				F82E4C262486C610006295EC /* mistik-sandvic.jpg in Resources */,
+				F82E4C0A2486C610006295EC /* iced-white-chocolate-mocha.jpg in Resources */,
+				F8EEE6D724870BD700E0EB79 /* misto-cookie.jpg in Resources */,
+				F82E4C252486C610006295EC /* fiesta.jpg in Resources */,
+				F82E4BDE2486BCA6006295EC /* productsData.json in Resources */,
+				F82E4C0B2486C610006295EC /* ristretto-bianco.jpg in Resources */,
+				F82E4C092486C610006295EC /* iced-caffe-latte.jpg in Resources */,
+				F82E4C1B2486C610006295EC /* buzlu-misto.jpg in Resources */,
+				F82E4C082486C610006295EC /* turk-kahvesi.jpg in Resources */,
+				F82E4C212486C610006295EC /* mozaik-kek.jpg in Resources */,
 				F82E4BC524869F56006295EC /* Assets.xcassets in Resources */,
+				F82E4C202486C610006295EC /* elmali-fit-kek.jpg in Resources */,
+				F82E4C1A2486C610006295EC /* filtre-kahve.jpg in Resources */,
+				F82E4C222486C610006295EC /* hurmali-fit-brownie.jpg in Resources */,
+				F82E4C122486C610006295EC /* caffe-mocha.jpg in Resources */,
+				F82E4C0E2486C610006295EC /* flat-white.jpg in Resources */,
+				F82E4C142486C610006295EC /* caffe-latte.jpg in Resources */,
+				F82E4C1C2486C610006295EC /* sutlu-cold-brew.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,8 +400,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				F82E4BBF24869F55006295EC /* AppDelegate.swift in Sources */,
+				F82E4BE02486BFA0006295EC /* ProductRow.swift in Sources */,
+				F82E4BD52486A3D3006295EC /* ProductsView.swift in Sources */,
+				F849AE4E24898DB90031952B /* ProductsDetail.swift in Sources */,
+				F849AE522489B0A00031952B /* UserData.swift in Sources */,
 				F82E4BC124869F55006295EC /* SceneDelegate.swift in Sources */,
-				F82E4BC324869F55006295EC /* ContentView.swift in Sources */,
+				F82E4BDC2486BADE006295EC /* Product.swift in Sources */,
+				F82E4C2B2486C90D006295EC /* ProductsList.swift in Sources */,
+				F82E4C292486C673006295EC /* Data.swift in Sources */,
+				F849AE4224895AB70031952B /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
