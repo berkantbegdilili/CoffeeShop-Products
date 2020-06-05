@@ -1,9 +1,9 @@
-# Coffee Shop - Products (Prototype)
+# Coffee Shop - Products (iOS Prototype)
 
 #
-> EN: It takes and parses products in the JSON format. Lists products using the SwiftUI framework.
+> EN: It takes and parses products in JSON format. Lists products dynamically using the SwiftUI framework.
 #
-> TR: Ürünleri JSON biçiminde alır ve ayrıştırır. SwiftUI çerçevesini kullanarak ürünleri listeler.
+> TR: Ürünleri JSON biçiminde alır ve ayrıştırır. SwiftUI çerçevesini kullanarak ürünleri dinamik bir şekilde listeler.
 
 #
 > Used Frameworks ; SwiftUI
