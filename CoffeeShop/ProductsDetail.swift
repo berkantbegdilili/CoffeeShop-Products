@@ -28,28 +28,18 @@ struct ProductsDetail: View {
                     .edgesIgnoringSafeArea(.top)
                 
                  Button(action: {
-                    self.userData.products[self.productIndex]
-                       .isFavorite.toggle()
+                    self.userData.products[self.productIndex].isFavorite.toggle()
                  }){
-                    if self.userData.products[self.productIndex].isFavorite {
-                        
                         Image(systemName: "suit.heart.fill")
                             .resizable()
                             .frame(width: 50, height: 50)
-                            .foregroundColor(.red)
+                            .foregroundColor(self.userData.products[self.productIndex].isFavorite ? .red : .gray)
                             
-                   }else{
-                        Image(systemName: "suit.heart.fill")
-                        .resizable()
-                        .frame(width: 50, height: 50)
-                        .foregroundColor(.gray)
-                   }
-                    }.buttonStyle(CircleButtonStyle())
-                    .offset(x:125,y:-200)
-                    .padding(.bottom,-130)
+                 }.buttonStyle(CircleButtonStyle())
+                  .offset(x:125,y:-200)
+                  .padding(.bottom,-130)
                     
-                
-                
+    
                 HStack{
                     Text(self.product.name)
                         .foregroundColor(Color(hex: "#4F48EC"))
